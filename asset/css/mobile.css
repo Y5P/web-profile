@@ -1,0 +1,55 @@
+@media only screen and (max-width: 800px) {
+    /* attribut */
+    .w-50{
+        width: 60% !important;
+    }
+    .d-hide{
+        display: block;
+    }
+    .m-hide{
+        display: none;
+    }
+
+    .flex-start{
+        display: flex;
+        justify-content:start;
+        flex-direction: column;
+    }
+    .flex-start > div{
+        position: relative;
+        z-index: 1 !important;
+        width: 50%;
+        height: 100%;
+        margin: 5px;
+        padding: 10px;
+    }
+    .card-bg{
+        padding: 20px !important;
+    }
+    .card-bg > *{
+        width: 98% !important;
+    }
+    .card-image{
+        height: 500px !important;
+    }
+}
+@media only screen and (max-width: 1350px) {
+    .w-50{
+        width: 94% !important;
+    }
+
+    /* attribut */
+    .flex-center{
+        height: 900px;
+        clear: both;
+        overflow: hidden;
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+    }
+    .flex-center > div{
+        width: 98% !important;
+        padding: 20px;
+        /* background-color: red; */
+    }
+}

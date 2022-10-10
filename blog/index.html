@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wellcome to my profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="icon" href="../asset/img/logo.png">
+
+    <link href="../font/css/fontawesome.min.css" rel="stylesheet">
+    <link href="../font/css/solid.min.css" rel="stylesheet">
+    <link href="../font/css/brands.min.css" rel="stylesheet">
+
+    <link href="../asset/css/desktop.css" rel="stylesheet">
+    <link href="../asset/css/mobile.css" rel="stylesheet">
+    <link href="../asset/css/style.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="../asset/img/logo.png" width="40px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../#skill">Skill</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../#project">Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="min-vh-100 w-100">
+        <div class="container list-blog pd-2 w-80">
+            <h3 class="text-center">My Blog</h3>
+            <br/>
+            <ul>
+                <li>
+                    <div class="w-100" onclick="tampilkanOtomatis(2,1,'.isi-blog')">
+                        <h5>Belajar dasar web</h5>
+                        <p>Belajar dasar pemrograman web menggunakan HTML</p>
+                        <p class="isi-blog" style="text-align: justify;display: none;border:0.5px gray solid;padding: 5px;border-radius: 2px;">
+                            HTML (Hypertext Markup Language) adalah bahasa markup atau bahasa standar yang digunakan untuk membuat sebuah website. HTML merupakan kerangka dari sebuah web yang sudah kita lihat selama ini. HTML memiliki beberapa versi, tetapi versi yang sering kita pakai pada saat ini adalah versi HTML 5. HTML 5 merupakan versi terbaru dari HTML saat ini yanng dimana memiliki beberapa fitur yang bisa kita gunakan contohnya adalah dalam pembuatan sebuah navbar, header, footer, asside dan lainnya tanpa harus mengidentifikasikannya atau mengelompokkannya di sebuah class. Cara penerapannya pada HTML 5 ialah dengan cara menambahkan perintah &lt; !DOCTYPE HTML &gt; pada baris awal saat kita membuat kodingan html. Cara penerapan kode di html ialah dengan menambahkan tag pembuka &lt; element &gt; dan tag penutup &lt; /element &gt;.
+                            
+                            HTML memiliki beberapa struktur yang sangat penting ialah tag html itu sendiri, tag head dan tag body. Tag html digunakan untuk menginformasikan pada browser bahsa dokumen ini bertipe HTML. Tag head merupakan wadah/tempat kita menaruh informasi-informasi tentang halaman website yang tidak ditampilkan dihalaman browser, contohnya ialah title dan source css/js. Sedangkan untuk tag body merupakan tag yang berisi element-element yang di tampilkan pada halaman website, contohnya adalah paragraf &lt; p &gt;.
+                            
+                            Dalam sebuah pemrograman web HTML merupakan sebuah kerangka dari sebuah website tersebut dapat kita analogikan di kehidupan sehari-hari yaitu HTML merupakan sebuah tulang yang ada di dalam tubuh manusia. Untuk penulisan kode agar bisa terbaca pada browser kita dapat melakukannya pada tag body yang dimana didalam body terdapat banyak macam element-element sesuai dengan fungsinya masing-masing. Dalam penulisan sebuah tag di HTML kita harus memiliki tag pembuka dan penutup, tetapi tidak semua tag memiliki penutup contohnya ialah tag &lt; img &gt; untuk menampilkan gambar dan tag &lt; br &gt; yang digunakan untuk break atau membuat baris baru.
+                            
+                            Berbagai jenis tag yang ada di HTML memiliki fungsi masing-masing, disini saya akan menyebutkan beberapa tag saja. Tag yang pertama adalah &lt; p &gt;&lt; /p &gt; yang digunakan untuk menampilkan sebuah paragraf yang ada di halaman website kita, tag ini berfungsi untuk menampilkan kalimat-kalimat yang akan kita tampilkan nantinya pada browser. Sedangkan untuk menampilkan sebuah title pada paragraf kita bisa menggunakan tag &lt; h1 &gt;&lt; /h1 &gt; sampai &lt; h6 &gt;&lt; /h6 &gt; sesuai dengan kebutuhan, semakin besar nilai headingnya maka semakin kecil pula tulisannya. Lalu di html juga bisa digunakan untuk membuat sebuah list &lt; li &gt;&lt; /li &gt; yang berurut &lt; ol &gt;&lt; /ol &gt; maupun yang tidak berurut &lt; ul &gt;&lt; /ul &gt; dengan cara penulisannya ialah menerapkan aturan listnya terlabih dahulu baru menambahkan tag list didalammnya, contoh : &lt; ul &gt;&lt; li &gt;&lt; /li &gt;&lt; /ul &gt;. Di dalam html juga kita bisa membuat sebuah tabel dengan cara menambahkan tag &lt; table &gt;&lt; /table &gt; untuk menerapkan syntax table di html dan perintah table row atau baris table &lt; tr &gt;&lt; /tr &gt; untuk membuat baris baru pada table dan untuk menambahkan data pada table bisa menggunakan tag &lt; td &gt;&lt; /td &gt; atau &lt; th &gt;&lt; /th &gt; untuk data header. Untuk menampilkan media kita bisa menggunakan fungsi masing-masing tagnya dan di berikan value pada source atau lokasi file yang akan ditampilkan, contohnya adalah &lt; img src="./lokasifile.jpeg" &gt;. Sedangkan untuk mengelompokkan data-data dari element html tersebut menjadi 1 bisa menggunakan tag &lt; div &gt;&lt; /div &gt; karena tag ini biasa digunakan untuk mengelompokkan atau membuat grup element menjadi 1 dan disarankan untuk menambahkan sebuah attribut class atau id.
+                            
+                            Pada saat penulisan kode pasti akan membuat kita keliru jika kode tersebut sudah mencapai banyak atau bertumpuk. Maka dari itu kita perlu sebuah komentar yang akan membantu kita untuk mengingat atau menambahkan sebuah catatan yang terselip didalam sebuah kodingan tersebut. Sama seperti bahasa lainnya, HTML juga memiliki sebuah komentar yang bisa kita terapkan dengan membukanya menggunakan &lt; !-- dan ditutup menggunakan -- &gt; maka kalimat apa saja yang ada di dalam tag tersebut tidak akan dibaca sebagai kode program oleh html.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="w-100 blog-aku" onclick="tampilkanOtomatis(2,2,'.isi-blog')">
+                        <h5>Belajar dasar web</h5>
+                        <p>Disini saya membagikan laporan saya</p>
+                        <p class="isi-blog" style="text-align: justify;display: none;border:0.5px gray solid;padding: 5px;border-radius: 2px;">
+                            HTML (Hypertext Markup Language) adalah bahasa markup atau bahasa standar yang digunakan untuk membuat sebuah website. HTML merupakan kerangka dari sebuah web yang sudah kita lihat selama ini. HTML memiliki beberapa versi, tetapi versi yang sering kita pakai pada saat ini adalah versi HTML 5. HTML 5 merupakan versi terbaru dari HTML saat ini yanng dimana memiliki beberapa fitur yang bisa kita gunakan contohnya adalah dalam pembuatan sebuah navbar, header, footer, asside dan lainnya tanpa harus mengidentifikasikannya atau mengelompokkannya di sebuah class. Cara penerapannya pada HTML 5 ialah dengan cara menambahkan perintah &lt; !DOCTYPE HTML &gt; pada baris awal saat kita membuat kodingan html. Cara penerapan kode di html ialah dengan menambahkan tag pembuka &lt; element &gt; dan tag penutup &lt; /element &gt;.
+                            
+                            HTML memiliki beberapa struktur yang sangat penting ialah tag html itu sendiri, tag head dan tag body. Tag html digunakan untuk menginformasikan pada browser bahsa dokumen ini bertipe HTML. Tag head merupakan wadah/tempat kita menaruh informasi-informasi tentang halaman website yang tidak ditampilkan dihalaman browser, contohnya ialah title dan source css/js. Sedangkan untuk tag body merupakan tag yang berisi element-element yang di tampilkan pada halaman website, contohnya adalah paragraf &lt; p &gt;.
+                            
+                            Dalam sebuah pemrograman web HTML merupakan sebuah kerangka dari sebuah website tersebut dapat kita analogikan di kehidupan sehari-hari yaitu HTML merupakan sebuah tulang yang ada di dalam tubuh manusia. Untuk penulisan kode agar bisa terbaca pada browser kita dapat melakukannya pada tag body yang dimana didalam body terdapat banyak macam element-element sesuai dengan fungsinya masing-masing. Dalam penulisan sebuah tag di HTML kita harus memiliki tag pembuka dan penutup, tetapi tidak semua tag memiliki penutup contohnya ialah tag &lt; img &gt; untuk menampilkan gambar dan tag &lt; br &gt; yang digunakan untuk break atau membuat baris baru.
+                            
+                            Berbagai jenis tag yang ada di HTML memiliki fungsi masing-masing, disini saya akan menyebutkan beberapa tag saja. Tag yang pertama adalah &lt; p &gt;&lt; /p &gt; yang digunakan untuk menampilkan sebuah paragraf yang ada di halaman website kita, tag ini berfungsi untuk menampilkan kalimat-kalimat yang akan kita tampilkan nantinya pada browser. Sedangkan untuk menampilkan sebuah title pada paragraf kita bisa menggunakan tag &lt; h1 &gt;&lt; /h1 &gt; sampai &lt; h6 &gt;&lt; /h6 &gt; sesuai dengan kebutuhan, semakin besar nilai headingnya maka semakin kecil pula tulisannya. Lalu di html juga bisa digunakan untuk membuat sebuah list &lt; li &gt;&lt; /li &gt; yang berurut &lt; ol &gt;&lt; /ol &gt; maupun yang tidak berurut &lt; ul &gt;&lt; /ul &gt; dengan cara penulisannya ialah menerapkan aturan listnya terlabih dahulu baru menambahkan tag list didalammnya, contoh : &lt; ul &gt;&lt; li &gt;&lt; /li &gt;&lt; /ul &gt;. Di dalam html juga kita bisa membuat sebuah tabel dengan cara menambahkan tag &lt; table &gt;&lt; /table &gt; untuk menerapkan syntax table di html dan perintah table row atau baris table &lt; tr &gt;&lt; /tr &gt; untuk membuat baris baru pada table dan untuk menambahkan data pada table bisa menggunakan tag &lt; td &gt;&lt; /td &gt; atau &lt; th &gt;&lt; /th &gt; untuk data header. Untuk menampilkan media kita bisa menggunakan fungsi masing-masing tagnya dan di berikan value pada source atau lokasi file yang akan ditampilkan, contohnya adalah &lt; img src="./lokasifile.jpeg" &gt;. Sedangkan untuk mengelompokkan data-data dari element html tersebut menjadi 1 bisa menggunakan tag &lt; div &gt;&lt; /div &gt; karena tag ini biasa digunakan untuk mengelompokkan atau membuat grup element menjadi 1 dan disarankan untuk menambahkan sebuah attribut class atau id.
+                            
+                            Pada saat penulisan kode pasti akan membuat kita keliru jika kode tersebut sudah mencapai banyak atau bertumpuk. Maka dari itu kita perlu sebuah komentar yang akan membantu kita untuk mengingat atau menambahkan sebuah catatan yang terselip didalam sebuah kodingan tersebut. Sama seperti bahasa lainnya, HTML juga memiliki sebuah komentar yang bisa kita terapkan dengan membukanya menggunakan &lt; !-- dan ditutup menggunakan -- &gt; maka kalimat apa saja yang ada di dalam tag tersebut tidak akan dibaca sebagai kode program oleh html.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>    
+
+  <footer class="w-100 pd-1" style="background-color: rgb(233, 233, 233);">
+    <div class="container">
+      <div class="row text-center">
+        <div class="w-100 mg-1">
+          <div>
+            <img src="../asset/img/logo.png" width="80px">
+            <h3>Yog<strong class="color-mm">ZsP</strong></h3> 
+          </div>
+        </div>
+      </div>
+      <div class="row list-right bold">
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#skill">SKILL</a></li>
+          <li><a href="#project">PROJECT</a></li>
+          <li><a href="#about">ABOUT</a></li>
+        </ul>
+      </div>
+      <div class="d-flex justify-content-between footer-about">
+          <div>
+            &copy; 2022 yogi surya prana
+          </div>
+          <div>
+            <a href="https://github.com/Y5P/" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/yogisryprn" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/6281246469424" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/yogisuryaprana1297481749129481964271498217894kyogi" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/YogiSuryaPrana" target="_blank"><i class="fab fa-twitter"></i></a>
+          </div>
+      </div>
+    </div>
+    <!-- <div class="container">
+      <div class="d-sm-flex justify-content-center">
+        <div class="align-self-center">
+            <img src="../asset/img/logo.png" width="70px">
+        </div>
+        <div class="align-self-center" style="padding-top: 30px;">
+          <div class="container">
+            <div class="fs-7">copyright &copy; yogi surya prana</div>
+            <div class="fs-7" style="word-spacing: 10px;">
+                <a href="https://www.instagram.com/yogisryprn" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/6281246469424" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="../asset/js/persen.js"></script>
+    <script src="../asset/js/scroll.js"></script>
+    <script src="../asset/js/hilang.js"></script>
+    <script src="../asset/js/script.js"></script>
+</body>
+</html>
