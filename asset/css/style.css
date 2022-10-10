@@ -134,11 +134,15 @@ body > *{
         left: 20%;
     }
     
+    .footer-about{
+        font-size: 15px;
+        
+    }
     .bulet {
         border-radius: 50%;
-        height: 80px;
+        height: 70px;
         font-weight: bold;
-        width: 80px;
+        width: 70px;
         display: table;
         margin: 1px;
     }
@@ -180,4 +184,7 @@ body > *{
 }
 .list-blog p:nth-child(2){
     border-bottom: gray 1px solid;
+}
+footer{
+    padding: 20px;
 }
